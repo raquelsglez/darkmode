@@ -1,0 +1,94 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color:#000000;
+    transition: background-color 1s, color 1s linear;
+    padding: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+#toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+#toggle-text {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+#toggle {
+    background-color: #ddd;
+    width: 60px; 
+    height: 28px; 
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+#toggle-button {
+    width: 20px; 
+    height: 20px; 
+    background-color: #ffd001;
+    top: 4px;
+    left: 5px;
+    border-radius: 50px;
+    position: absolute;
+    transition: background-color 1s, color 1s linear;
+    background-image: url("/assets/img/sol.png");
+    background-size:contain;
+    background-position: center;
+    transition: transform 0.7s linear;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+body.dark-mode #toggle-button {
+    background-color: #2701ff;
+    background-image: url("/assets/img/luna.png"); 
+}
+
+.dark-mode #toggle-button {
+    transform: translateX(30px);
+    transition: transform 0.7s linear;
+}
+
+.dark-mode section div h1,
+.dark-mode header h1 {
+    color: #ffd001;
+}
+
+
+section div {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section div img {
+    margin-top: 25px;
+}
+
+section div h1 {
+    font-size: 40px;
+    margin: 18px;
+}
+section div p {
+    padding: 0px 182px 0 182px;
+}
